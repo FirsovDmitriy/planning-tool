@@ -1,0 +1,66 @@
+.checklist__header {
+  display: flex;
+  align-items: center;
+  margin: 0 0 16px 0;
+}
+
+.checklist__header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 100%;
+  margin: 0 0 0 15px;
+}
+
+.checklist__title {
+  margin: 0;
+}
+
+.checklist__progressbar {
+  margin: 0 0 10px 0;
+}
+
+.checklist__item {
+  display: flex;
+  align-items:  center;
+  &:not(:last-child) {
+    margin: 0 0 10px 0;
+  }
+  padding: 5px;
+  border-radius: 4px;
+  transition: background 0.3s ease-in;
+  @media (any-hover: hover) {
+    &:hover {
+      background: rgba($color: #808080, $alpha: 0.2);
+    }
+  }
+  cursor: pointer;
+}
+
+.checklist__checkbox {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+}
+
+.checklist__text {
+  margin-left: 14px;
+  width: 100%;
+}
+
+.checklist__editor {
+  &--active {
+    display: block;
+    opacity: 1;
+  }
+}
+
+.checklist__editor-controls {
+  margin-top: 10px;
+}
+
+.checklist__icon-close {
+  background: transparent;
+  border: none;
+  padding: 0 14px;
+}

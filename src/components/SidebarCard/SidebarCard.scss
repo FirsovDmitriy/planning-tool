@@ -1,0 +1,28 @@
+.sidebar-card {}
+
+.sidebar-card__item {
+  margin: 0 0 10px 0;
+  border-radius: 3px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.sidebar-card__button {
+  background: rgba($color: #808080, $alpha: var(--blackout));
+  border: none;
+  width: 100%;
+  display: flex;
+  padding: 5px 10px;
+  font-size: 14px;
+  @media (any-hover: hover) {
+    &:hover {
+      --blackout: 0.5;
+    }
+  }
+}
+
+.sidebar-card__text {
+  margin-left: 5px;
+}

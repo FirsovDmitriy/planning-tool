@@ -1,0 +1,29 @@
+.check {
+  --size-checkbox: 20px;
+  display: flex;
+}
+
+.check__input {
+  appearance: none;
+}
+
+.check__box {
+  width: var(--size-checkbox);
+  height: var(--size-checkbox);
+  border-radius: 5px;
+  box-shadow: 0 0 0 0.1em #000;
+  display: block;
+  cursor: pointer;
+}
+
+.check__input:focus + .check__box {
+  box-shadow: 0 0 0 0.1em #000, 0 0 0 0.2em #808080;
+}
+
+.check__input:checked + .check__box {
+  background: url('../../assets/img/check.svg') center / cover no-repeat;
+}
+
+.check__input:disabled + .check__box {
+  box-shadow: 0 0 0 0.1em #9b9b9b;
+}

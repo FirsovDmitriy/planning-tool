@@ -1,0 +1,28 @@
+.modal-main-col {
+  display: grid;
+  grid-template-columns: 1fr 191px;
+  gap: 20px;
+}
+
+.modal-desc {
+  margin: 0 0 20px 0;
+}
+
+.modal-desc__button {
+  background-color: teal;
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  // min-height: 40px;
+  height: 40px;
+  padding: 8px 12px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.modal-desc__row {
+  display: flex;
+  align-items: center;
+}
