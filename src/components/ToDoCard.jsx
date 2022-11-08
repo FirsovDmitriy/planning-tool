@@ -12,7 +12,7 @@ import './Checklist.scss'
 import IconX from './icons/IconX'
 import SidebarCard from './SidebarCard/SidebarCard'
 
-const ToDoCard = (props) => {
+const ToDoCard = ({ card, ...props })  => {
 
   const [show, setShow] = useState(false);
 
@@ -95,9 +95,11 @@ const ToDoCard = (props) => {
   return (
     <>
       
-      <Card style={{ width: '18rem' }}>
+      <Card { ...props } >
         <Card.Body>
-        <Card.Title> { props.card.title } </Card.Title>
+        <p>
+          { card.name }
+        </p>
         <Card.Text>
           <span>
             <i className='bi bi-check2-square'></i>
@@ -114,7 +116,7 @@ const ToDoCard = (props) => {
 
       <Modal size="lg" show={show} centered="true" onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title> { props.card.title } </Modal.Title>
+          <Modal.Title> { card.title } </Modal.Title>
         </Modal.Header>
         <Modal.Body className='modal-main-col'>
           <div>

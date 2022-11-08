@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import './App.css'
 import ToDoCard from './components/ToDoCard'
 import TheHeader from './components/TheHeader'
 import Board from './components/Board/Board'

@@ -20,3 +20,49 @@
   position: relative;
   z-index: 1;
 }
+
+.board__body {
+  display: flex;
+}
+
+// Columns ====
+.list-tasks {
+  width: 272px;
+  margin: 0 4px;
+}
+
+.list-tasks__content {
+  background: rgb(235, 236, 240);
+  color: #000;
+  border-radius: 3px;
+}
+
+.list-tasks__header {
+  padding: 10px 8px;
+}
+
+.list-tasks__cards {
+  padding: 0 8px;
+}
+
+.list-tasks__card {
+  margin-bottom: 10px;
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.list-tasks__footer {
+  padding: 10px 8px;
+  display: grid;
+}
+
+.list-tasks__button-icon {
+  margin: 0 10px 0 0;
+}
+
+
+
+.selected {
+  opacity: 0.6;
+}

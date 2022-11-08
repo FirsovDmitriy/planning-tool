@@ -10,7 +10,7 @@ const TheHeader = () => {
         <Navbar.Brand>
           <div className='logo'>
             <IconCircle />
-            <span className='logo__text'>Trello Clone</span>
+            <span className='logo__text'>Trello React</span>
           </div>
         </Navbar.Brand>
         <Navbar.Collapse>
